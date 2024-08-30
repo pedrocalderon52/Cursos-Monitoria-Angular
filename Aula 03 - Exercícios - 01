@@ -1,3 +1,11 @@
+/* Crie um algoritmo que verifique todos os números entre 1 e 200,
+caso o numero seja divisível por 3, imprima “divisível por 3”, caso
+seja divisível por 5, imprima “divisível por 5”, caso seja divisível
+pelos 2 imprima “divisível por 3 e 5”
+, se não for nenhum dos casos
+imprima o próprio numero */
+
+
 for(let i: number = 1; i<200;i++){
     if (i%3 == 0 && i%5 == 0){
         console.log("Divisível por 3 e 5")
@@ -6,8 +14,11 @@ for(let i: number = 1; i<200;i++){
         if (i%3 == 0){
             console.log(`${i} é Divisível por 3`)
         }
-        if (i%5 == 0){
+        else if (i%5 == 0){
             console.log(`${i} é Divisível por 5`)
+        }
+        else{
+            console.log(`${i} não é divisível por 3 ou 5`)
         }
     }
 }
