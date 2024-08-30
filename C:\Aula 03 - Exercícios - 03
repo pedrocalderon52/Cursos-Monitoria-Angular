@@ -1,0 +1,17 @@
+/*Crie um algoritmo onde declarando uma variável numero, dê um
+valor de um inteiro para ela, e faça um loop onde este loop vá de
+1 até numero, e se o valor for ímpar some a uma variável soma. 
+
+no final, imprima a soma. */
+
+
+let numero_desejado: number = Number(window.prompt("Digite o número limite: "))
+let soma:number = 0 
+
+for (let i:number = 1; i<=numero_desejado; i++){
+    if (i%2 != 0){
+        soma += i
+    }
+}
+
+console.log(soma)
